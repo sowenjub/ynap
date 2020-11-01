@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "ynap"
+require "ynap/cli"
+
+Ynap::CLI.start(ARGV)

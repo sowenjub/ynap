@@ -1,0 +1,29 @@
+:plaid:
+  :client_id: 1234567890a
+  :public_key: 1234567890a
+  :secret: 1234567890a
+  :env: development
+  :country_codes: FR
+  :redirect_uri: https://{subdomain}.ngrok.io/oauth-response.html
+  :web_port: 8000
+:ynab:
+  :token: your-token
+  :budget_id: your-id-in-ynab-url
+:regex:
+  - ^(?:PRLV|VIR|E-VIR)(?:\sSEPA)?\s(?<name>[^,]*)(?:,.*)?$ # VIR/PRLV SEPA PAYEE NAME(, something)
+  - ^CARTE \d{1,2}\/\d{1,2}\/\d{1,2}\s(?<name>[\w\s]*)(?:\sCB\*\d*)?$ # CARTE 16/10/20 PAYEE NAME CB*6825
+  - ^CB\s\d*\s(?<name>.{11}).*$ # CB 123123 PAYEE NAME 11CITY LE 1111 - PAYEE NAME IS 11 chars
+:banks:
+  - :id: bansky
+    :name: Bansky
+    :plaid_access_token: access-development-123456789
+    :accounts:
+      - :plaid_id: account-plaid-id
+        :ynab_id: account-ynab-id
+        :start_date: "2020-10-23"
+  - :id: piggy
+    :name: Piggy Bank
+    :plaid_access_token: access-development-123456789
+    :accounts:
+      - :plaid_id: account-plaid-id
+        :ynab_id: account-ynab-id

@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'ynap/cli'
+
+Ynap::CLI.start
