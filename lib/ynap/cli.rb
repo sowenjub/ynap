@@ -45,7 +45,7 @@ module Ynap
       end
     end
 
-    desc "diff [BANK_KEY]", "Print the last transactions for YNAB and Plaid for comparison."
+    desc "diff [BANK_KEY]", "Print the latest transactions for YNAB and Plaid for comparison."
     method_option :config, type: :string, aliases: '-c', default: DEFAULT_CONFIG_PATH
     method_option :limit, type: :numeric, aliases: '-l', default: 10
     def diff(bank_id)

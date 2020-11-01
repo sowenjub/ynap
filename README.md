@@ -199,10 +199,6 @@ You can get a list of commands by running
 ```bash
 ynap
 ```
-and more infos about a command options with
-```bash
-ynap help COMMAND_NAME # e.g. ynap help import
-```
 
 Most commands accept:
 *  `-c path/to/config/file.yml` to point to the config file
