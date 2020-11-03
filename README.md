@@ -40,7 +40,6 @@ It looks like this, and we'll complete it in the next steps.
 ```yml
 :plaid:
   :client_id: 1234567890a
-  :public_key: 1234567890a
   :secret: 1234567890a
   :env: development
   :country_codes: FR
@@ -127,7 +126,7 @@ The Plaid development environment requires https and a callback URI, so we'll us
 The plaid server is just an easier to use copy of the official [ruby quickstart app](https://github.com/plaid/quickstart/tree/master/ruby). You can find more about the quickstart app here: https://plaid.com/docs/quickstart/.
 
 * Create a [free account](https://dashboard.plaid.com/signup) on Plaid.com
-* Copy the **development** [credentials](https://dashboard.plaid.com/overview/development) (client_id/public_key/secret) into the `:plaid:` section
+* Copy the **development** [credentials](https://dashboard.plaid.com/overview/development) (client_id/secret) into the `:plaid:` section
 * Change the `country_codes` to the one you need. If you have more than one, separate them with a comma, no space (e.g. "FR,GB")
 * Assuming your file is accessible in the current folder as `ynap.yml`, start the server:
 

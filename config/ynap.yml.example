@@ -1,6 +1,5 @@
 :plaid:
   :client_id: 1234567890a
-  :public_key: 1234567890a
   :secret: 1234567890a
   :env: development
   :country_codes: FR
