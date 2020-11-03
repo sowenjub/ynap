@@ -13,13 +13,13 @@ module Ynap
 
     desc "console", "Start a YNAP console"
     def console
-      system("ruby bin/console")
+      system("ruby #{File.expand_path File.dirname(__FILE__)}/../../bin/console")
     end
 
     desc "plaid", "Start the Plaid web server, used during setup to retrieve access tokens"
     method_option :config, type: :string, aliases: '-c', default: DEFAULT_CONFIG_PATH
     def plaid
-      system("ruby bin/plaid #{options.config}")
+      system("ruby #{File.expand_path File.dirname(__FILE__)}/../../bin/plaid #{options.config}")
     end
 
     #

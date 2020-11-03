@@ -69,14 +69,6 @@ It looks like this, and we'll complete it in the next steps.
 
 ```
 
-### Download this repository
-
-At the moment there's a small gotcha regarding two commands: `ynap console` and `ynap plaid`.
-To make those work, you need to:
-1. Download this repository
-2. Go to the directory in your terminal `cd ynap`
-3. Launch those commands from there
-
 ### Get your YNAB token
 
 We're going to complete the `:ynab:` parts of the config file:
