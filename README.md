@@ -145,7 +145,7 @@ ynap plaid -c path/to/ynap.yml
   "request_id": "moreRandomString"
 }
 ```
-* Paste the `access_token` in front of `:plaid_access_token:` in your `config.yml` file, and `item_id` as the `plaid_id` for your account (Most API requests interact with an Item, which is a Plaid term for a login at a financial institution)
+* Paste the `access_token` in front of `:plaid_access_token:` in your `config.yml` file, and `item_id` as the `plaid_id` for your account (Most API requests interact with an Item, which is a Plaid term for a login at a financial institution). If that `item_id` does not work, get it with `be bin/ynap plaid_ids boursorama`.
 
 **What if you have more than one account at this bank?**
 

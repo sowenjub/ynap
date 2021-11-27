@@ -6,7 +6,7 @@ class Account < BridgeRecord
 
   attr_reader :plaid_id, :start_date, :ynab_id
 
-  def initialize(plaid_id:, plaid_access_token:, ynab_id:, start_date: nil)
+  def initialize(plaid_id:, plaid_access_token:, ynab_id: nil, start_date: nil)
     super(plaid_access_token)
     @plaid_id     = plaid_id
     @ynab_id      = ynab_id

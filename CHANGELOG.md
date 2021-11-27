@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1] - 2020-10-29
+
+### Changed
+
+- Fix missing method when balance is an Integer
+
 ## [1.1.0] - 2020-10-29
 
 ### Changed
